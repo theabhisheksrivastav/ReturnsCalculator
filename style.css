@@ -1,0 +1,201 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --text-color: 90, 40%, 50%;
+    --primary-color: 140, 40%, 30%;
+    --primary-color-dark: 140, 20%, 25%;
+    --primary-color-light: 140, 40%, 35%;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+nav {
+    color: hsl(var(--text-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: hsl(var(--primary-color-dark));
+    box-shadow: 0 0 5px 1px hsl(var(--primary-color-light));
+}
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.background {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-image: url('img/bg-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    min-height: 60vh;
+}
+.oneTimeInvest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 0.7rem;
+    color: wheat;
+    display: inline-block;
+    background-color: hsl(var(--primary-color-light), .5);
+    box-shadow: 0 0 5px 1px hsl(var(--primary-color-light));
+    padding: 40px 30px;
+    width: 80%;
+    height: 30%;
+    min-height: 300px;
+    min-width: 250px;
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 10px;
+}
+.recurringInvest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 0.7rem;
+    color: wheat;
+    display: inline-block;
+    background-color: hsl(var(--primary-color-light), .5);
+    box-shadow: 0 0 5px 1px hsl(var(--primary-color-light));
+    padding: 40px 30px;
+    width: 80%;
+    height: 30%;
+    min-height: 300px;
+    min-width: 250px;
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 10px;
+}
+footer {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: hsl(var(--primary-color-dark));
+    box-shadow: 0 0 5px 1px hsl(var(--primary-color-light));
+
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contactUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footerInfo {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: hsl(var(--primary-color-dark));
+    flex-grow: 1;
+}
+.oneTimeDiv input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: .5em;
+    border-radius: .25em;
+    border: none;
+    outline: none;
+    background-color:  hsl(var(--primary-color-light), .3);
+    color: wheat;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+.oneTimeDiv button {
+    padding: .5em 1em;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    background-color: hsl(var(--primary-color), .25);
+    border: 1px solid hsl(var(--primary-color-dark));
+    border-radius: .25em;
+    outline: none;
+    cursor: pointer;
+    color: wheat;
+}
+.recurringDiv input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: .5em;
+    border-radius: .25em;
+    border: none;
+    outline: none;
+    background-color:  hsl(var(--primary-color-light), .3);
+    color: wheat;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+.recurringDiv button {
+    padding: .5em 1em;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    background-color: hsl(var(--primary-color), .25);
+    border: 1px solid hsl(var(--primary-color-dark));
+    border-radius: .25em;
+    outline: none;
+    cursor: pointer;
+    color: wheat;
+}
+.contactUs input { 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: .5em;
+    border-radius: .25em;
+    border: none;
+    outline: none;
+    background-color:  hsl(var(--primary-color-light), .3);
+    color: wheat;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+.contactUs button {
+    padding: .5em 1em;
+    font-size: .9rem;
+    font-weight: lighter;
+    background-color: hsl(var(--primary-color), .25);
+    border: 1px solid hsl(var(--primary-color-dark));
+    border-radius: .25em;
+    outline: none;
+    cursor: pointer;
+    color: wheat;
+}
+.oneResult {
+    font-size: 1.2rem;
+}
+.recResult {
+    font-size: 1.2rem;
+}

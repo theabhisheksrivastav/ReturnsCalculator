@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returns Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h2>Returns Calculator</h2>
+        </div>
+    </nav>
+    <main>
+        <div class="background">
+            <div class="oneTimeInvest">
+                <h1>One Time Investment</h1>
+                <form action="#" class="oneTimeForm">
+                    <div class="oneTimeDiv">
+                        <div class="oneTimePrincipal">
+                            <label for="principal">Enter Your Initial Amount</label>
+                            <input type="number" class="principal" id="principal">
+                        </div>
+                        <div class="oneTimeRate">
+                            <label for="rate">Enter Your Rate of Return in Percentage</label>
+                            <input type="number" class="rate" id="rate">
+                        </div>
+                        <div class="oneTimeTime">
+                            <label for="time">Enter Your Time in Years</label>
+                            <input type="number" class="time" id="time">
+                        </div>
+                        <button type="button" class="oneTimeSubmit" onclick="calculateOneTimeInvestment()">Calculate</button>
+                    </div>
+                </form>
+                <div class="result">
+                    <span class="oneResult" id="oneTimeResult" aria-live="polite">Result will be displayed here</span>
+                </div>
+            </div>
+            <div class="recurringInvest">
+                <h1>Recurring Investment</h1>
+                <form action="#" class="recurringForm">
+                    <div class="recurringDiv">
+                        <div class="recirringPrincipal">
+                            <label for="principalRec">Enter Your SIP Amount</label>
+                            <input type="number" class="principal" id="principalRec">
+                        </div>
+                        <div class="recirringRate">
+                            <label for="rateRec">Enter Your Rate of Return in Percentage</label>
+                            <input type="number" class="rate" id="rateRec">
+                        </div>
+                        <div class="recirringTime">
+                            <label for="timeRec">Enter Your Time in Years</label>
+                            <input type="number" class="time" id="timeRec">
+                        </div>
+                        <button type="button" class="recirringSubmit" onclick="calculateRecurringInvestment()">Calculate</button>
+                    </div>
+                </form>
+                <div class="result">
+                    <span class="recResult" id="recurringResult" aria-live="polite">Result will be displayed here</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="about">
+            <h2>About Us</h2>
+            <p>Investment Return Calculator Projects</p>
+        </div>
+        <div class="contactUs">
+            <h2>Contact Us</h2>
+            <form action="" class="contactUs">
+                <input type="text" class="name" placeholder="Enter Your Name">
+                <input type="email" class="email" placeholder="Enter Your Email">
+                <input type="text" class="message" placeholder="Enter Your Message">
+                <button type="button" class="contactSubmit" onclick="alertUser()">Submit</button>
+            </form>
+        </div>
+        <div class="footerInfo">
+            <p>© 2024 Returns Calculator</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
